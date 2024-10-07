@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPOP Groups</title>
+    <style>
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Verdana";
+            background-color: #a98e8e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(2, auto);  
+            gap: 10px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .grid-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            background-color: #1c1a1a;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>KPOP Groups</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="bts.webp" alt="bts">
+            <p>BTS</p>
+        </div>
+        <div class="grid-item">
+            <img src="blackpink.png" alt="blackpink">
+            <p>Blackpink</p>
+        </div>
+        <div class="grid-item">
+            <img src="skz.jpg" alt="skz">
+            <p>Stray Kids</p>
+        </div>
+        <div class="grid-item">
+            <img src="twice.webp" alt="twice">
+            <p>Twice</p>
+        </div>
+        <div class="grid-item">
+            <img src="txt.jpg" alt="txt">
+            <p>TXT</p>
+        </div>
+        <div class="grid-item">
+            <img src="aespa.webp" alt="aespa">
+            <p>Aespa</p>
+        </div>
+    </div>
+</body>
+</html>
